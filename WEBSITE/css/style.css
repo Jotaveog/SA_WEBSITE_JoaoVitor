@@ -1,1 +1,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: antiquewhite;
+  line-height: 1.6;
+}
+
+header {
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav {
+    background-color: #007bff;
+    justify-content: right;
+    border-radius: 5px;
+}
+
+#navbarNav{
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+}
+
+.nav-item {
+    margin: 10px;
+    border-radius: 5px;
+}
+.nav-item a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.nav-item a:hover {
+    background-color: rgb(48, 162, 255);    
+}
+
+.navbar .nav-link {
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0.2rem;
+  border-radius: 0.4rem;
+  transition: 0.2s ease;
+}
+
+
+main {
+  width: 1200px;
+  margin: 2rem auto 3rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+main section {
+  margin-bottom: 2.2rem;
+
+}
+
+#icon {
+    font-size: 4rem;
+    background-color: gainsboro;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 5px;
+}
+  
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 300px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(23, 32, 59, 0.15);
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-text {
+  margin: 0;
+  color: #495057;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-footer {
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 0.75rem 1rem;
+  font-size: 0.87rem;
+  color: #6c757d;
+}
+
+.hero-section {
+  padding: 2rem 1.5rem;
+  background: linear-gradient(110deg, #007bff 0%, #0066cc 100%);
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.hero-section h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero-section p {
+  margin: 0.75rem 0 0;
+  opacity: 0.94;
+}
+
+.service-main {
+  padding-top: 1rem;
+}
+
+.service-description {
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.service-subtitle {
+  color: #212529;
+  font-size: 1.05rem;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.card-shadow {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  padding: 1.25rem;
+  width: 1130px;
+}
+
+.contato-form label {
+  display: block;
+  margin: 0.75rem 0 0.25rem;
+  font-weight: 600;
+}
+
+.contato-form input, .contato-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.butao {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #007bff;
+  color: white;
+  border: 1px;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.butao:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+footer {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+  font-weight: 600;
+}
