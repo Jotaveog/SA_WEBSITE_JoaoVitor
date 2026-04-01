@@ -7,8 +7,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: antiquewhite;
-  line-height: 1.6;
+  background-color: rgb(231, 231, 231) !important; 
 }
 
 header {
@@ -16,7 +15,7 @@ header {
 }
 
 .navbar-nav {
-    background-color: #007bff;
+    background-color: #303030;
     justify-content: right;
     border-radius: 5px;
 }
@@ -41,7 +40,7 @@ header {
     transition: background-color 0.3s ease;
 }
 .nav-item a:hover {
-    background-color: rgb(48, 162, 255);    
+    background-color: rgb(0, 0, 0);    
 }
 
 .navbar .nav-link {
@@ -66,7 +65,6 @@ main {
 
 main section {
   margin-bottom: 2.2rem;
-
 }
 
 #icon {
@@ -132,41 +130,23 @@ main section {
   color: #6c757d;
 }
 
-.hero-section {
+.contato {
   padding: 2rem 1.5rem;
-  background: linear-gradient(110deg, #007bff 0%, #0066cc 100%);
-  color: #fff;
+  background: black;
+  color: white;
   border-radius: 12px;
   margin-bottom: 1.75rem;
   text-align: center;
 }
 
-.hero-section h2 {
+.contato h2 {
   margin: 0;
   font-size: 2rem;
 }
 
-.hero-section p {
+.contato p {
   margin: 0.75rem 0 0;
   opacity: 0.94;
-}
-
-.service-main {
-  padding-top: 1rem;
-}
-
-.service-description {
-  margin: 0 0 1.5rem;
-  text-align: center;
-}
-
-.service-subtitle {
-  color: #212529;
-  font-size: 1.05rem;
-  margin: 0;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contato-grid {
@@ -176,7 +156,7 @@ main section {
 }
 
 .card-shadow {
-  background: #fff;
+  background: white;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
@@ -203,7 +183,7 @@ main section {
 .butao {
   display: inline-block;
   margin-top: 1rem;
-  background: #007bff;
+  background: black;
   color: white;
   border: 1px;
   border-radius: 8px;
@@ -214,7 +194,7 @@ main section {
 }
 
 .butao:hover {
-  background: #0056b3;
+  background: rgb(66, 66, 66);
   transform: translateY(-1px);
 }
 
